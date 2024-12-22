@@ -11,11 +11,14 @@
     <a-scene embedded arjs>
       <!-- Marker -->
       <a-marker preset="hiro">
-        <!-- 3D Model of a knife -->
-        <a-box position="0 0.5 0" material="color: silver;"></a-box>
+        <!-- Modelo 3D (reemplaza la caja) -->
+        <a-entity 
+          gltf-model="https://cdn.glitch.global/knife-model.glb" 
+          position="0 0 0" 
+          scale="0.5 0.5 0.5">
+        </a-entity>
         <a-text value="Knife Example: Start Chopping" position="0 1 0" scale="2 2 2" color="#FF0000"></a-text>
       </a-marker>
-
       <!-- Camera -->
       <a-entity camera></a-entity>
     </a-scene>
